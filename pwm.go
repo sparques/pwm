@@ -2,6 +2,8 @@ package pwm
 
 import "machine"
 
+type Pin = machine.Pin
+
 type Group interface {
 	Configure(machine.PWMConfig) error
 	Channel(machine.Pin) (uint8, error)
